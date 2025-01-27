@@ -45,6 +45,23 @@
             padding: 20px;
         }
 
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 300px; /* Adjust height as needed */
+            overflow: hidden;
+        }
+
+        .image-container img {
+            position: absolute;
+            top: -100px; /* Adjust this value to crop the top */
+            left: 50%;
+            transform: translateX(-50%);
+            width: auto;
+            height: auto;
+            max-width: none;
+        }
+
         footer {
             background-color: #cccccc;
             padding: 10px;
@@ -65,9 +82,9 @@
         <tr>
             <td>
                 <nav>
-                    <a href="index.html">Home</a>
-                    <a href="about_me.html">About Me</a>
-                    <a href="projects.html">Projects</a>
+                    <a href="#home">Home</a>
+                    <a href="#about">About Me</a>
+                    <a href="#projects">Projects</a>
                     <a href="contact.html">Contact</a>
                 </nav>
             </td>
@@ -77,6 +94,17 @@
                 <main>
                     <h2>Welcome to My Website</h2>
                     <p>A website created by me to share document my projects, showcase my skills, and more.</p>
+                    <div class="image-container">
+                        <img src="media/seadog_image.avif" alt="Profile Picture">
+                    </div>
+                    <h2>About Me</h2>
+                    <p>
+                        I am a highly multidisciplinary engineer with a passion for automation and robotics. I received a B.S. from Webb
+                        Institute in Naval Architecture and Marine Engineering, followed by an M.S. in Mechanical Engineering from MIT.
+                    </p>
+                    <p>
+                        My skills include control theory, automation, CAD, robotics, and data analysis. Keep reading to find out more!
+                    </p>
                 </main>
             </td>
         </tr>
