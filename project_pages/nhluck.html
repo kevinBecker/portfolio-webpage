@@ -37,16 +37,17 @@
         }
 
         .project {
-            text-align: center;
-            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
         }
 
         .project img {
-            display: block;
-            margin: 0 auto 150px; /* Added 20px margin at the bottom */
-            max-width: 60%;
-            height: auto;
+            width: auto;
+            max-height: 150px;
+            margin-right: 20px;
         }
+
 
         footer {
             background-color: #cccccc;
@@ -58,31 +59,22 @@
 
 <body>
     <header>
-        <h1>Kevin Becker</h1>
+        <h1>Kevin Becker's Projects</h1>
     </header>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about_me.html">About Me</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <a href="../index.html">Home</a>
+        <a href="../about_me.html">About Me</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../contact.html">Contact</a>
     </nav>
     <main>
         <h2>My Projects</h2>
         <div class="project">
-            <h3><a href="project_pages/monte_moos.html">Distributed Simulation Cluster</a></h3>
-            <img src="media/monte_moos_cover_photo.png" alt="Distributed Simulation Cluster">
-        </div>
-        <div class="project">
-            <h3><a href="project_pages/adaptive_controller.html">Nonlinear Adaptive Controller</a></h3>
-            <img src="media/adaptive_ctrl_cover_image.png" alt="Nonlinear Adaptive Controller">
-        </div>
-        <div class="project">
-            <h3><a href="project_pages/simulated_kitchen_robot.html">Simulated Kitchen Assistant Robot</a></h3>
-            <img src="media/kitchen_robot_cover_image.png" alt="Simulated Kitchen Assistant Robot">
-        </div>
-        <div class="project">
-            <h3><a href="project_pages/nhluck.html">NHL Game Predictor</a></h3>
-            <img src="media/nhluck_cover_image.png" alt="NHL Game Predictor">
+            <img src="../media/nhluck_cover_image.png" alt="Project 1">
+            <div>
+                <h3><a>Sports game predictor.</a></h3>
+                <p>This fully-automated data analysis program pulls from free, online APIs to predict the outcomes of NHL games. This program starts by finding what games are happening today, downloads the necessary data for those teams, and runs a special prediction algorithm to predict the results. Analysis of these results is in progress.</p>
+            </div>
         </div>
         <!-- Add more projects as needed -->
     </main>
