@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Kevin Becker</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f5f5;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #cccccc;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #999999;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .project {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .project img {
+            width: auto;
+            max-height: 150px;
+            margin-right: 20px;
+        }
+
+
+        footer {
+            background-color: #cccccc;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Kevin Becker's Projects</h1>
+    </header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../about_me.html">About Me</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
+    <main>
+        <h2>My Projects</h2>
+        <div class="project">
+            <img src="../media/undergraudate_thesis_cover_image.png" alt="Project 1">
+            <div>
+                <h3><a>Undergraduate Thesis: Autonomous Surface Vehicle.</a></h3>
+                <p>This project involved many different skills to make improvements to the vehicle on different fronts.</p>
+                <p>Actuator auto-calibration routine. The rudder was controlled by a linear actuator on a linkage. The actuator's feedback was an analog voltage input. However, since the readings would vary based on battery voltage, the midpoint would shift. To remedy this, an auto-calibration routine was added at startup to reach the ends of travel. </p>
+                <p>The actuator on the vehicle had a slow update rate. Combining this with a bang-bang controller that had no deadzone cause the actuator to have large oscilations. To eliminate overshoot and reduce steady-state error, a deadzone and PWM inputs were implemented in the software to improve the actuator's response. </p>
+                <p>See a video of the actuator updates <a href="https://youtube.com">here</a>.</p>
+                <p>The GPS inputs were also being read without a filter. Due to time constraints, I was unable to learn about and implement a Kalman filter on this project. Instead, a low-pass filter was applied to reduce the impact noise had on vehicle response. This improvement was enough to get the vehcle following a simple waypoint trajectory.</p>
+            </div>
+        </div>
+        <!-- Add more projects as needed -->
+    </main>
+    <footer>
+        <p>This webpage is still under construction.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Kevin Becker</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f5f5;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #cccccc;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #999999;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .project {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .project img {
+            width: auto;
+            max-height: 150px;
+            margin-right: 20px;
+        }
+
+
+        footer {
+            background-color: #cccccc;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Kevin Becker's Projects</h1>
+    </header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../about_me.html">About Me</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
+    <main>
+        <h2>My Projects</h2>
+        <div class="project">
+            <img src="../media/hmm_sim_screenshot.png" alt="Project 1">
+            <div>
+                <h3><a>Vehicle Propagation Model.</a></h3>
+                <p>
+                    Consider a wide open sea where multiple sensors on different platforms are recieving spuradic detections of an unknown vessel on the water.
+                    The goal of this method was to utilize a discrete approach, which compared to a particle based approach would:
+                    1. Be repeatable, so the results are guaranteed to be the same for the same set of inputs.
+                    2. A discrete approach would allow for all data to be transfered from one platform to another. This allows multiple searching vehicles to compare maps and gather data from each other. 
+                </p>
+                <p>
+                    A few assumptions from this project are:
+                    1. The target exists.
+                    2. The grid would estimate the target's position for a last known velocity and heading. 
+                </p>
+                <p>
+                    The underlying method was to use the estimated heading/speed and its variance to generate a kernel to perform convolusions over the probability grid. This approach was inspired by a linearized hidden markov model.
+                </p>
+                <p>However, certain assumptions required discretization, and the numerical artifacts yeilded in poor results, but an interesting learning experience.</p>
+                <p>A video demo may be seen <a href="../media/hmm_Sim_Demo.mp4"> here</a>. </p>
+            </div>
+        </div>
+        <!-- Add more projects as needed -->
+    </main>
+    <footer>
+        <p>This webpage is still under construction.</p>
+    </footer>
+</body>
+
+</html>
