@@ -70,10 +70,23 @@
     <main>
         <h2>My Projects</h2>
         <div class="project">
-            <img src="../media/adaptive_ctrl_cover_image.png" alt="Project 1">
+            <img src="../media/differential_flatness.svg" alt="differential flatness image. Source: underactuated.csail.mit.edu">
             <div>
-                <h3><a>Nonlinear Adaptive Controller.</a></h3>
-                <p>I wrote a model-based nonlinear adaptive controller for an autonomous surface vehicle. The controller may be configured as a PD controller with a sliding variable to integrate about, or it may be configured as a sliding-mode controller. See a video of the vehicle operating <a href="https://youtu.be/qHHcxHXNx0I">here</a>. See the final report <a href="https://github.com/kevinBecker/portfolio-webpage/blob/main/media/adaptive_controller.pdf">here</a></p> (backup link <a href="../media/adaptive_controller.pdf">here</a>).</p>
+                <h3><a>Multi-Drone Slung Load Trajectory Generation and Stabilizaiton.</a></h3>
+                <p>As part of a 3 person project group, we implemented a 3-drone slung load system in PyDrake for a graduate school course in underactuated robotics. 
+                    <!-- Insert paper link here-->
+                     Given the state of the slung-load, the done trajectories may be calculated. However, since there are infinite solutions, certain degrees of freedom need to be pre-determined. These are often set to zero for mathematical simplicity.
+                     This is one of the ideas behind <a href="https://underactuated.csail.mit.edu/trajopt.html#section8">differential flatness</a>. 
+                     <!-- As an example, the force in one direction of a drone may be set to zero as a way of working backwards to a solution. This is the case in the project from this class, which may be seen in the youtube video <a href="https://youtu.be/qHHcxHXNx0I">here</a>. -->
+                </p>
+                <p>
+                     As a novel approach, the trajectory generation was done using a solver, which allows for much easier fine-tuning of which trajectory variables should be predetermined on the drone trajectories. 
+                     This project is a unique tool to determine which variables should be pre-determined.
+                </p>
+                <p>
+                     See a short clip of the 3-drone system carrying a slung load <a href="https://youtu.be/qHHcxHXNx0I">here</a>.
+                </p>
+                <p> Image source: underactuated.csail.mit.edu</p>
             </div>
         </div>
         <!-- Add more projects as needed -->
