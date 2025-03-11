@@ -81,13 +81,15 @@
                 </p>
                 <p>
                     A few assumptions from this project are:
+                </p><p>
                     1. The target exists.
-                    2. The grid would estimate the target's position for a last known velocity and heading. 
+                </p><p>
+                    2. The target continued in a linear trajectory at the last known velocity/heading without turning.  
                 </p>
                 <p>
                     The underlying method was to use the estimated heading/speed and its variance to generate a kernel to perform convolusions over the probability grid. This approach was inspired by a linearized hidden markov model.
                 </p>
-                <p>However, certain assumptions required discretization, and the numerical artifacts yeilded in poor results, but an interesting learning experience.</p>
+                <p>However, certain assumptions and constraints to the problem required discretization. The discretization resulted in numerical artifacts, yeilding poor results. However, it was an interesting learning experience.</p>
                 <p>A video demo may be seen <a href="../media/hmm_Sim_Demo.mp4"> here</a>. </p>
             </div>
         </div>
