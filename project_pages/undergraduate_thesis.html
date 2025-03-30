@@ -72,12 +72,32 @@
         <div class="project">
             <img src="../media/undergraduate_thesis.png" alt="ASV in the water.">
             <div>
-                <h3><a>Undergraduate Thesis: Autonomous Surface Vehicle.</a></h3>
-                <p>This project involved many different skills to make improvements to the vehicle on different fronts.</p>
-                <p>Actuator auto-calibration routine. The rudder was controlled by a linear actuator on a linkage. The actuator's feedback was an analog voltage input. However, since the readings would vary based on battery voltage, the midpoint would shift. To remedy this, an auto-calibration routine was added at startup to reach the ends of travel. </p>
-                <p>The actuator on the vehicle had a slow update rate. Combining this with a bang-bang controller that had no deadzone cause the actuator to have large oscilations. To eliminate overshoot and reduce steady-state error, a deadzone and PWM inputs were implemented in the software to improve the actuator's response. </p>
-                <p>See a video of the actuator updates <a href="https://youtu.be/eOxOah8ZLOI">here</a>.</p>
-                <p>The GPS inputs were also being read without a filter. Due to time constraints, I was unable to learn about and implement a Kalman filter on this project. Instead, a low-pass filter was applied to reduce the impact noise had on vehicle response. This improvement was enough to get the vehcle following a simple waypoint trajectory.</p>
+                <h3><a>Undergraduate Thesis: Autonomous Surface Vehicle</a></h3>
+                <p>This comprehensive project involved multiple technical improvements to enhance the vehicle's performance and reliability:</p>
+                
+                <h4>Actuator Auto-Calibration System</h4>
+                <p>
+                    Developed an auto-calibration routine for the rudder control system. The rudder was controlled by a linear actuator with analog voltage feedback, 
+                    which would shift based on battery voltage. The new calibration routine automatically determines the actuator's travel limits during startup, 
+                    ensuring consistent operation regardless of power supply variations.
+                </p>
+
+                <h4>Control System Optimization</h4>
+                <p>
+                    Addressed actuator response issues by implementing several improvements:
+                </p>
+                <ul>
+                    <li>Implemented PWM inputs to improve actuator response and improve efficiency</li>
+                    <li>Reduced overshoot and steady-state error</li>
+                </ul>
+                <p>View a demonstration of the improved actuator performance <a href="https://youtu.be/eOxOah8ZLOI">here</a>.</p>
+
+                <h4>GPS Signal Processing</h4>
+                <p>
+                    Enhanced the GPS input processing system. While time constraints prevented implementation of a Kalman filter, 
+                    a low-pass filter was successfully implemented to reduce noise impact on vehicle response. This improvement 
+                    enabled the vehicle to effectively follow simple waypoint trajectories.
+                </p>
             </div>
         </div>
         <!-- Add more projects as needed -->

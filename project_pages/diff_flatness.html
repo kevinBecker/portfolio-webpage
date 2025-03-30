@@ -72,21 +72,15 @@
         <div class="project">
             <img src="../media/differential_flatness.svg" alt="differential flatness image. Source: underactuated.csail.mit.edu">
             <div>
-                <h3><a>Multi-Drone Slung Load Trajectory Generation and Stabilizaiton.</a></h3>
-                <p>As part of a 3 person project group, we implemented a 3-drone slung load system in PyDrake for a graduate school course in underactuated robotics. 
-                    <!-- Insert paper link here-->
-                     Given the state of the slung-load, the done trajectories may be calculated. However, since there are infinite solutions, certain degrees of freedom need to be pre-determined. These are often set to zero for mathematical simplicity.
-                     This is one of the ideas behind <a href="https://underactuated.csail.mit.edu/trajopt.html#section8">differential flatness</a>. 
-                     <!-- As an example, the force in one direction of a drone may be set to zero as a way of working backwards to a solution. This is the case in the project from this class, which may be seen in the youtube video <a href="https://youtu.be/qHHcxHXNx0I">here</a>. -->
+                <h3><a>Multi-Drone Slung Load Trajectory Generation and Stabilization</a></h3>
+                <p>As part of a three-person project team, I developed a 3-drone slung load system using PyDrake for a graduate course in underactuated robotics. The system implements differential flatness principles to calculate drone trajectories based on the slung load state. While there are infinite possible solutions, certain degrees of freedom are predetermined, often set to zero for mathematical simplicity, as explained in the concept of <a href="https://underactuated.csail.mit.edu/trajopt.html#section8">differential flatness</a>.</p>
+                <p>
+                    The project introduces a novel approach using a solver for trajectory generation, enabling flexible fine-tuning of predetermined variables in drone trajectories. This methodology serves as a valuable tool for determining which variables should be constrained in multi-drone systems.
                 </p>
                 <p>
-                     As a novel approach, the trajectory generation was done using a solver, which allows for much easier fine-tuning of which trajectory variables should be predetermined on the drone trajectories. 
-                     This project is a unique tool to determine which variables should be pre-determined.
+                    Watch a demonstration of the 3-drone system stabilizing about their trajectories <a href="https://youtu.be/qHHcxHXNx0I">here</a>.
                 </p>
-                <p>
-                     See a short clip of the 3-drone system carrying a slung load <a href="https://youtu.be/qHHcxHXNx0I">here</a>.
-                </p>
-                <p> Image source: underactuated.csail.mit.edu</p>
+                <p>Image source: underactuated.csail.mit.edu</p>
             </div>
         </div>
         <!-- Add more projects as needed -->

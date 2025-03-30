@@ -72,25 +72,25 @@
         <div class="project">
             <img src="../media/hmm_sim_screenshot.png" alt="Project 1">
             <div>
-                <h3><a>Vehicle Propagation Model.</a></h3>
+                <h3><a>Vehicle Propagation Model</a></h3>
                 <p>
-                    Consider a wide open sea where multiple sensors on different platforms are recieving spuradic detections of an unknown vessel on the water.
-                    The goal of this method was to utilize a discrete approach, which compared to a particle based approach would:
-                    1. Be repeatable, so the results are guaranteed to be the same for the same set of inputs.
-                    2. A discrete approach would allow for all data to be transfered from one platform to another. This allows multiple searching vehicles to compare maps and gather data from each other. 
+                    This project addresses the challenge of tracking an unknown vessel in open waters using multiple sensors across different platforms. The method employs a discrete approach that offers several advantages over particle-based methods:
                 </p>
+                <ul>
+                    <li>Deterministic results: The same inputs consistently produce the same outputs</li>
+                    <li>Data transferability: Information can be easily shared between multiple search vehicles</li>
+                </ul>
                 <p>
-                    A few assumptions from this project are:
-                </p><p>
-                    1. The target exists.
-                </p><p>
-                    2. The target continued in a linear trajectory at the last known velocity/heading without turning.  
+                    The model operates under the following assumptions:
                 </p>
+                <ul>
+                    <li>The target vessel exists in the search area</li>
+                    <li>The target maintains a linear trajectory at the last known velocity and heading without course changes</li>
+                </ul>
                 <p>
-                    The underlying method was to use the estimated heading/speed and its variance to generate a kernel to perform convolusions over the probability grid. This approach was inspired by a linearized hidden markov model.
+                    The methodology utilizes estimated heading/speed and their variances to generate a kernel for probability grid convolutions, inspired by linearized hidden Markov models. While the discretization approach introduced numerical artifacts that affected the results, the project provided valuable insights into probabilistic tracking methods.
                 </p>
-                <p>However, certain assumptions and constraints to the problem required discretization. The discretization resulted in numerical artifacts, yeilding poor results. However, it was an interesting learning experience.</p>
-                <p>A video demo may be seen <a href="../media/hmm_Sim_Demo.mp4"> here</a>. </p>
+                <p>View a demonstration video <a href="../media/hmm_Sim_Demo.mp4">here</a>.</p>
             </div>
         </div>
         <!-- Add more projects as needed -->
